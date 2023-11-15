@@ -25,7 +25,10 @@ dependencies:
   - pandas-flavor
   - pandas-profiling
   {% endif -%}
-  - pip
+  - pip:
+    - nhanes
+    - nhanes==0.5.1
+    - ozon3
   - plotly
   - pyjanitor
   {% if cookiecutter.project_packages == "All" -%}
